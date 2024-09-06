@@ -1,0 +1,8 @@
+{
+    "name": "cobble",
+    "description": "stops breaking cobblestone",
+    "creator": "theauhh",
+    "entry": "index.js",
+    "version": "1.0.0",
+    "requires": ["PogData", "Vigilance", "Elementa"]
+}
