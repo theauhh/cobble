@@ -1,5 +1,7 @@
 import { @Vigilant, @SwitchProperty, @SelectorProperty} from "../Vigilance/index"
 
+// taken from coleweight
+
 @Vigilant("cobble/config", "cobble settings", {
     getCategoryComparator: () => (a, b) => {
         const categories = ["General"];
@@ -12,15 +14,22 @@ import { @Vigilant, @SwitchProperty, @SelectorProperty} from "../Vigilance/index
 class Settings {
     constructor() {
         this.initialize(this);
-        this.setCategoryDescription("General", `&acobble &bv${JSON.parse(FileLib.read("cobble", "metadata.json")).version}` + 
-        `\n&aBy &btheauhh`)
+        this.setCategoryDescription("General", `&2cobble &7v${JSON.parse(FileLib.read("cobble", "metadata.json")).version}` + 
+        `\n&7By &2theauhh`)
     }
     @SwitchProperty({
-        name: "Stop breaking cobble",
+        name: "Stop breaking route blocks (cobble)",
         description: "cancel the packets bruv",
         category: "General"
     })
     cobblestone = false;
+
+    @SwitchProperty({
+        name: "Only stop packets to cobblestone",
+        description: "i want my cobbled stone pls",
+        category: "General"
+    })
+    onlyCobble = true;
 
     @SwitchProperty({
         name: "Get route from Polar",

@@ -3,6 +3,6 @@
     "description": "stops breaking cobblestone",
     "creator": "theauhh",
     "entry": "index.js",
-    "version": "1.1.0",
+    "version": "1.1.1",
     "requires": ["PogData", "Vigilance", "Elementa"]
 }

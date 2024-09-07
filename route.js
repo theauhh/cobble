@@ -34,6 +34,12 @@ export function loadRoute() {
                 ChatLib.chat(`${prefix} Found Coleweight route, converting...`)
                 parseColeweight(cb);
             }
+
+            else if (Array.isArray(cb) && cb.length > 0 && cb[0].x !== undefined && cb[0].y !== undefined && cb[0].z !== undefined) {
+                // coleweight
+                ChatLib.chat(`${prefix} Found a route, converting...`)
+                parseColeweight(cb);
+            }
     
             else {
                 ChatLib.chat(`${prefix}&c Something went wrong! Failed to load route! (${e})`)
