@@ -1,0 +1,15 @@
+v1.0.0:
+Initial Release (Primitive Stop Cobble)
+
+v1.1.0:
+ - Feat: only stops breaking on route blocks
+ - Feat: route import (two types of import currently supported: coleweight & polar)
+ - Feat: auto import polar routes (choose which in settings)
+
+v1.1.1:
+ - Feat: only Cobble option
+
+v1.1.2:
+ - Fix: only cobble not working properly
+ - Feat: Auto find selected polar route
+ - Feat: Update Checker

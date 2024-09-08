@@ -1,0 +1,7 @@
+
+[general]
+	only_stop_packets_to_cobblestone = true
+	"stop_breaking_route_blocks_(cobble)" = true
+	get_route_from_polar = true
+	polar_route = 1
+
